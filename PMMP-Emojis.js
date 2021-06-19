@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PMMP Emojis
 // @namespace    https://github.com/ErikPDev/PMMP-Emojis
-// @version      1.2
+// @version      1.0
 // @description  A simple script that adds emoji support to the forums!
 // @author       ErikPDev
 // @match        https://forums.pmmp.io/*
@@ -74,13 +74,7 @@
                 if(Emojis[EmojisShortCode[num]] == undefined){EmojiCS = "❓";}
                 listOfBlockquote[blockquote].innerHTML = listOfBlockquote[blockquote].innerHTML.replace(new RegExp(escapeRegExp(EmojisShortCode[num]), 'g'), EmojiCS);
             }
-            const listOfaside = document.body.getElementsByTagName("aside");
-            for (var aside in listOfaside){
-                if(listOfaside[aside].innerHTML == undefined){continue;}
-                EmojiCS = Emojis[EmojisShortCode[num]];
-                if(Emojis[EmojisShortCode[num]] == undefined){EmojiCS = "❓";}
-                listOfaside[aside].innerHTML = listOfaside[aside].innerHTML.replace(new RegExp(escapeRegExp(EmojisShortCode[num]), 'g'), EmojiCS);
-            }
+          
         }
         DomInUse = false;
     });
