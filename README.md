@@ -7,6 +7,8 @@ https://greasyfork.org/en/scripts/428195-pmmp-emojis
 
 
 # Chrome extension
+https://github.com/ErikPDev/PMMP-Emojis/releases/tag/V1.0
+
 Extensions can be loaded in unpacked mode by following the following steps:
 
 Visit chrome://extensions (via omnibox or menu -> Tools -> Extensions).\
