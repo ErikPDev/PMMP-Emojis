@@ -28,3 +28,6 @@ Chrome extention removes `Post` on status. - UnConfirmed
 
 # Special Thanks
 Special thanks to Primus for teaching me about pseudo 
+
+# Notes
+Feel free to create PR's as this project is an experiment and still needs improvements.
