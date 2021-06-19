@@ -23,3 +23,5 @@ Select the PMMP-Emoji directory containing the files. (Make sure to unzip it)
 # Example
 <img src="https://github.com/ErikPDev/PMMP-Emojis/raw/main/Screenshot%202021-06-19%20184918.png">
 
+# Known Bugs
+Chrome extention removes `Post` on status. - UnConfirmed
