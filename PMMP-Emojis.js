@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PMMP Emojis
 // @namespace    https://github.com/ErikPDev/PMMP-Emojis
-// @version      1.0
+// @version      1.2
 // @description  A simple script that adds emoji support to the forums!
 // @author       ErikPDev
 // @match        https://forums.pmmp.io/*
@@ -45,13 +45,13 @@
     if(localStorage.Emoji == undefined){
         console.log("Fetching data.");
         fetch(EmojisApi)
-            .then(response => { response.text().then(response => {localStorage.setItem("Emoji",response)})});
+            .then(response => { response.text().then(response => {localStorage.setItem("Emoji",response);})});
         console.log("Data fetched completed!");
     }else{
     console.log("Already fetched, using localstorage as data");
     };
-    const Emojis = JSON.parse(localStorage.getItem("Emoji"));
-
+    let Emojis = JSON.parse(localStorage.getItem("Emoji"));
+    if(Emojis == null){document.location.reload(true);}
     function escapeRegExp(string) {
         return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
     }
@@ -71,10 +71,16 @@
             for (var blockquote in listOfBlockquote){
                 if(listOfBlockquote[blockquote].innerHTML == undefined){continue;}
                 var EmojiCS = Emojis[EmojisShortCode[num]];
-                if(Emojis[EmojisShortCode[num]] == undefined){EmojiCS = "❓";}
+                if(EmojiCS == undefined){EmojiCS = "❓";}
                 listOfBlockquote[blockquote].innerHTML = listOfBlockquote[blockquote].innerHTML.replace(new RegExp(escapeRegExp(EmojisShortCode[num]), 'g'), EmojiCS);
             }
-          
+            const listofSignature = document.getElementsByClassName("signature");
+            for (var signature in listofSignature){
+                if(listofSignature[signature].innerHTML == undefined){continue;}
+                EmojiCS = Emojis[EmojisShortCode[num]];
+                if(EmojiCS== undefined){EmojiCS = "❓";}
+                listofSignature[signature].innerHTML = listofSignature[signature].innerHTML.replace(new RegExp(escapeRegExp(EmojisShortCode[num]), 'g'), EmojiCS);
+            }
         }
         DomInUse = false;
     });
