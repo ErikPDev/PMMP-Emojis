@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PMMP Emojis
 // @namespace    https://github.com/ErikPDev/PMMP-Emojis
-// @version      1.0
+// @version      1.2
 // @description  A simple script that adds emoji support to the forums!
 // @author       ErikPDev
 // @match        https://forums.pmmp.io/*
