@@ -20,8 +20,9 @@ Click on the "Load unpacked extension..." button.
 Select the PMMP-Emoji directory containing the files. (Make sure to unzip it)
 
 
-# Example
+# Examples
 <img src="https://github.com/ErikPDev/PMMP-Emojis/raw/main/Screenshot%202021-06-19%20184918.png">
+<img src="https://github.com/ErikPDev/PMMP-Emojis/raw/main/upload_2021-6-19_22-51-46.png">
 
 # Known Bugs
 Chrome extention removes `Post` on status. - UnConfirmed
