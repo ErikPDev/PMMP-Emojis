@@ -25,3 +25,6 @@ Select the PMMP-Emoji directory containing the files. (Make sure to unzip it)
 
 # Known Bugs
 Chrome extention removes `Post` on status. - UnConfirmed
+
+# Special Thanks
+Special thanks to Primus for teaching me about pseudo 
