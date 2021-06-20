@@ -5,9 +5,8 @@ Using this script, avaiable in GreasyFork/TamperMonkey and so on, Your device wi
 
 https://greasyfork.org/en/scripts/428195-pmmp-emojis
 
-
 # Chrome extension
-https://github.com/ErikPDev/PMMP-Emojis/releases/tag/V1.0
+https://github.com/ErikPDev/PMMP-Emojis/releases
 
 Extensions can be loaded in unpacked mode by following the following steps:
 
