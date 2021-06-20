@@ -24,7 +24,7 @@ Select the PMMP-Emoji directory containing the files. (Make sure to unzip it)
 <img src="https://github.com/ErikPDev/PMMP-Emojis/raw/main/upload_2021-6-19_22-51-46.png">
 
 # Known Bugs
-There are no known bugs
+Emoji converter doesn't work on thread posting, Help needed 😄
 
 # Special Thanks
 Special thanks to Primus for teaching me about pseudo 
