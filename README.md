@@ -1,4 +1,4 @@
-# PMMP-Emojis - V1.2
+# PMMP-Emojis - V1.3
 PMMP forums is missing one very important thing for our commutation. Emojis.
 
 Using this script, avaiable in GreasyFork/TamperMonkey and so on, Your device will be able to render emojis and send emojis through the forums.
